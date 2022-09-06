@@ -1,5 +1,8 @@
 # Title
 
+* Date: [YYY-MM-DD when the decision was last modified]
+* Participants: [list those involved in the decision]
+
 ## Status
 
 What is the status? [ *Proposed* | *Accepted* | *Rejected* | *Deprecated* | *Superseded* ]

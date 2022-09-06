@@ -1,5 +1,8 @@
 # ADR 0001: ADR Template
 
+* Date: 2022-09-06
+* Participants: Igor Markin, ThePhez
+
 ## Status
 
 Proposed
