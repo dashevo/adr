@@ -2,6 +2,7 @@
 
 * Date: 2022-09-06
 * Participants: Igor Markin, Ivan Shumkov, ThePhez
+* Scope(s): All
 
 ## Status
 

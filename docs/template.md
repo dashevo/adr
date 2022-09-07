@@ -2,6 +2,7 @@
 
 * Date: [YYY-MM-DD when the decision was last modified]
 * Participants: [list those involved in the decision]
+* Scope(s): [list of affected scope(s) (Core, Platform, Clients/JavaScript, ...)]
 
 ## Status
 
