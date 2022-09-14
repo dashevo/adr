@@ -23,7 +23,7 @@ documentation without being overly burdensome.
 <!-- What is the change that we're proposing and/or doing? -->
 
 It makes sense to build on the work of others that have implemented an ADR process. For this reason,
-the template in [docs/template.md](./docs/template.md) is proposed as a simple, [commonly
+the template in [template/adr-template.md](./template/adr-template.md) is proposed as a simple, [commonly
 used](https://github.com/joelparkerhenderson/architecture-decision-record/blob/main/templates/decision-record-template-by-michael-nygard/index.md)
 ADR template.
 
