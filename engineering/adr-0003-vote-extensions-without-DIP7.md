@@ -69,8 +69,8 @@ SignID = transaction without quorumSig
 
 * Change vote extension signing logic to pass the whole vote extension payload instead of DIP7 format (Tenderdash team)
 * Pass the whole transaction to vote extensions instead of transaction hash (Platform team)
-* Change signature verification in rust-dashcore (Platform team)
-* Change signature verification in Core (Core team)
+* Update Asset Unlock Transaction signature verification function in rust-dashcore (Platform team)
+* Update Asset Unlock Transaction signature verification function in Core (Core team)
 * Add a new RPC method to validate and sign Asset Unlock Transaction (Core team)
 * VoteExtension should use special Core RPC method in case if vote extended with Asset Unlock Transaction (Tenderdash team)
 

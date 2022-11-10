@@ -78,8 +78,8 @@ The two block commit logic become unnecessary and can be removed from the codeba
 
 * Revert commit with additional asset lock payload types form rust-dashcore library (Platform team)
 * Remove withdrawal transactions queue and related logic from Drive (Platform team)
-* Add `requestID` to Asset Unlock Payload and signature verification in rust-dashcore (Platform team)
-* Add `requestID` to Asset Unlock Payload and signature verification in Core (Core team)
+* Add `requestID` to Asset Unlock Payload and update signature verification function in rust-dashcore (Platform team)
+* Add `requestID` to Asset Unlock Payload and update signature verification function in Core (Core team)
 * Change request ID prefix to `dpve` in Tenderdash (Tenderdash team)
 
 ## Consequences
