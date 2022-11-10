@@ -88,7 +88,8 @@ The two block commit logic become unnecessary and can be removed from the codeba
 
 * An Asset Unlock transaction will be signed and broadcasted to Core on the same block when the withdrawal was requested.
   It speeds up withdrawal up to 3 minutes (empty block interval).
-* Unnecessary logic, data and IO operations will be removed that will simplify the system and reduce the load.
+* Simpler withdrawal functionality. Unnecessary logic, data and IO operations will be removed that will simplify
+  the system and reduce the load.
 
 ### Cons
 
