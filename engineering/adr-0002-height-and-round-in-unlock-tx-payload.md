@@ -56,7 +56,7 @@ There is [ADR0003](./adr-0003-vote-extensions-without-DIP7.md) that is dedicated
 
 ## Decision
 
-To allow asset unlock transaction consumers verify signature, concatenated prefix `dpve` (Dash Platform Vote Extension), platform height (uint64)
+To allow asset unlock transaction consumers verify signature, concatenated prefix `ve` (Dash Platform Vote Extension), platform height (uint64)
 and platform round (uint32) as `requestID` (16 bytes) field should be added to asset unlock transaction payload. Having the complete `requestID`
 as part of the transaction payload will allow not just tenderdash but other L2 systems to utilize Asset Lock/Unlock Core functionality for their
 needs in the future.
@@ -80,7 +80,7 @@ The two block commit logic become unnecessary and can be removed from the codeba
 * Remove withdrawal transactions queue and related logic from Drive (Platform team)
 * Add `requestID` to Asset Unlock Payload and update signature verification function in rust-dashcore (Platform team)
 * Add `requestID` to Asset Unlock Payload and update signature verification function in Core (Core team)
-* Change request ID prefix to `dpve` in Tenderdash (Tenderdash team)
+* Change request ID prefix to `ve` in Tenderdash (Tenderdash team)
 
 ## Consequences
 
