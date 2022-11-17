@@ -57,15 +57,15 @@ There is [ADR0003](./adr-0003-vote-extensions-without-DIP7.md) that is dedicated
 ## Decision
 
 To allow asset unlock transaction consumers verify signature, concatenated prefix `ve` (Dash Platform Vote Extension), platform height (uint64)
-and platform round (uint32) as `requestID` (16 bytes) field should be added to asset unlock transaction payload. Having the complete `requestID`
-as part of the transaction payload will allow not just tenderdash but other L2 systems to utilize Asset Lock/Unlock Core functionality for their
-needs in the future.
+and platform round (uint32) as `signatureRequest` (14 bytes) field should be added to asset unlock transaction payload. Having a complete request
+message as part of the transaction payload will allow not just tenderdash but other L2 systems to utilize Asset Lock/Unlock Core functionality for
+their needs in the future.
 
-To verify the signature, asset unlock transaction consumer should hash `requestID` from payload a combine with `quorumHash` and `sigHash`
+To verify the signature, asset unlock transaction consumer should hash `signatureRequest` from payload a combine with `quorumHash` and `sigHash`
 according to DIP7:
 
 ```
-requestID = SHA256(requestID from transaction payload)
+requestID = SHA256(signatureRequest from transaction payload)
 
 sigHash = SHA256(transaction without quorumSig)
 
