@@ -72,7 +72,7 @@ sigHash = SHA256(transaction without quorumSig)
 SignID = SHA256(quorumHash, requestID, sigHash)
 ```
 
-The two block commit logic become unnecessary and can be removed from the codebase to simplify the withdrawal process.
+The two block commit logic that mitigates "multi round signature shares" attack using additional step with a queue become unnecessary and can be removed from the codebase to simplify the withdrawal process.
 
 ## Implementation
 
