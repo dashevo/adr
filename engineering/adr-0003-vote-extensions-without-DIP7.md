@@ -86,8 +86,11 @@ SignID = transaction without quorumSig
 ### Cons
 
 * Tenderdash's vote extension functionality become vulnerable for "multi round signature shares" attack. ABCI app developers
-  should always keep this in mind and implement own protection mechanisms for each case on ABCI app side. Providing unsafe API sounds
-  like against Tendermint philosophy.
+  should always keep this in mind and implement own protection mechanisms for each case on ABCI app side. 
+* It introduces an additional dependency between Tenderdash and Core
+* It requires Tenderdash to rely on another component to ensure the solution's security. 
+* Vote extension implementation becomes part of business logic that "belongs" to a higher layer, instead of just providing well-defined, independent services to that layer. 
+`
 * With withdrawal pooling mechanism, asset unlock transaction could be pretty big and will be interchanged between tenderdash
   validators via p2p according to the current implementation. This can be optimized but additional changes in Tenderdash is required.
 * Tenderdash should know what it's signing with vote extension and use special Core RPC method. This logic can be moved to Core, then
