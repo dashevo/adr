@@ -74,6 +74,11 @@ SignID = SHA256(quorumHash, requestID, sigHash)
 
 The two block commit logic that mitigates "multi round signature shares" attack using additional step with a queue become unnecessary and can be removed from the codebase to simplify the withdrawal process.
 
+An additioanl security layer could be added to [Sign](https://dashcore.readme.io/docs/core-api-ref-remote-procedure-calls-evo#quorum-sign) Core's RPC.
+List of quorums types should be limited to platform only. It will guarantiee that Sign RPC method won't be used to attack Layer 1 functionality like
+Instant Send and Chain Lock. 
+
+
 ## Implementation
 
 * Revert commit with additional asset lock payload types form rust-dashcore library (Platform team)
