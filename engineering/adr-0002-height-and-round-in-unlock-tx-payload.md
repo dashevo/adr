@@ -98,4 +98,4 @@ Instant Send and Chain Lock.
 
 ### Cons
 
-* Additional 16 bytes will be added to Asset Unlock transaction
+* Additional 14 bytes will be added to Asset Unlock transaction
