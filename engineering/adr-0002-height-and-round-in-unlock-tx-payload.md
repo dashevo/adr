@@ -51,7 +51,7 @@ There two ways to proceed with credits withdrawal implementation:
 1. Add height and round to asset lock transaction payload and remove unnecessary in this case "two block commit" solution to simplify the system
 2. Change tenderdash to sign the whole transaction instead of DIP7 format.
 
-Both approaches have benefits and downsides. In this ADR we will look closer to the fist solution.
+Both approaches have benefits and downsides. In this ADR we will look closer to the first solution.
 There is [ADR0003](./adr-0003-vote-extensions-without-DIP7.md) that is dedicated to the second approach.
 
 ## Decision
